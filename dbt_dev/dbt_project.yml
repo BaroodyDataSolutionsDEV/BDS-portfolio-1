@@ -37,3 +37,6 @@ models:
 
     warehouse:
       +materialized: table
+
+    marts:
+      +materialized: table
