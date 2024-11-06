@@ -15,6 +15,8 @@ plays as (
 final as (
     select
 
+		games.game_id,
+		plays.play_id,
 		games.season,
 		games.home_team,
 		games.away_team,
@@ -139,6 +141,7 @@ final as (
 		plays.two_point_attempt,
 		plays.aborted_play,
 
+		players.player_id,
 		players.full_name,
 		players.height_inches,
 		players.weight_pounds,
@@ -149,7 +152,8 @@ final as (
         
     from plays
         left join games on plays.game_id = games.game_id
-		left join players on plays.passer_player_id = players.gsis_id
+		left join players on plays.passer_player_id = players.player_id
+	where play_type = 'pass'
 )
 
 select * from final
