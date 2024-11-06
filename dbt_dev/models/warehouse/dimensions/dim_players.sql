@@ -18,7 +18,7 @@ recent_rosters as (
 
 final as (
     select
-        recent_rosters.gsis_id,
+        recent_rosters.gsis_id as player_id,
         recent_rosters.position,
         recent_rosters.full_name,
         recent_rosters.first_name,
