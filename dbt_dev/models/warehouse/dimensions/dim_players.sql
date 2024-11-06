@@ -23,7 +23,7 @@ final as (
         recent_rosters.full_name,
         recent_rosters.first_name,
         recent_rosters.last_name,
-        recent_rosters.birth_date,
+        cast(recent_rosters.birth_date as date),
         recent_rosters.height_inches,
         recent_rosters.weight_pounds,
         recent_rosters.college,

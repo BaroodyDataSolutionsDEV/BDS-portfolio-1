@@ -22,7 +22,7 @@ final as (
         humidity_percent,
         wind_description,
         nfl_api_id,
-        home_score
+        home_score,
         away_score,
         neutral_site,
         net_score_relative_to_home_team,
