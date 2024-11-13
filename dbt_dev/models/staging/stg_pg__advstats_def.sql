@@ -28,4 +28,4 @@ select
     cast(case when def_tackles_combined = 'NA' then null else def_tackles_combined end as integer) as def_tackles_combined,
     cast(case when def_missed_tackles = 'NA' then null else def_missed_tackles end as integer) as def_missed_tackles,
     cast(case when def_missed_tackle_pct = 'NA' then null else def_missed_tackle_pct end as numeric) as def_missed_tackle_pct
-from {{ source('raw', 'advstats_def') }}
+from {{ source('warehouse', 'advstats_def') }}

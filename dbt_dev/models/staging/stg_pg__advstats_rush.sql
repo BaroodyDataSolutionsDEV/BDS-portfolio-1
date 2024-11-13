@@ -20,4 +20,4 @@ select
             else receiving_broken_tackles
         end
     as integer) as receiving_broken_tackles
-from {{ source('raw', 'advstats_rush') }}
+from {{ source('warehouse', 'advstats_rush') }}

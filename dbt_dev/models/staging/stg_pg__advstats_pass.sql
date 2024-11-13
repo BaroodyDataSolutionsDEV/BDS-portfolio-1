@@ -23,4 +23,4 @@ select
     cast(case when def_times_blitzed = 'NA' then null else def_times_blitzed end as integer) as def_times_blitzed,
     cast(case when def_times_hurried = 'NA' then null else def_times_hurried end as integer) as def_times_hurried,
     cast(case when def_times_hitqb = 'NA' then null else def_times_hitqb end as integer) as def_times_hitqb
-from {{ source('raw', 'advstats_pass' )}}
+from {{ source('warehouse', 'advstats_pass' )}}

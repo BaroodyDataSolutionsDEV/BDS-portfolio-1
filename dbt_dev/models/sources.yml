@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: raw
-    database: NFL_DEV  
-    schema: raw  
+  - name: warehouse
+    database: postgres  
+    schema: raw
     tables:
       - name: pbp
       - name: injuries

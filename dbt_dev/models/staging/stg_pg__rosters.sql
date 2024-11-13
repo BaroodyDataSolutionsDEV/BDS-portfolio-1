@@ -35,4 +35,4 @@ select
     rookie_year::integer,
     draft_club,
     draft_number::integer
-from {{ source('raw', 'rosters') }}
+from {{ source('warehouse', 'rosters') }}

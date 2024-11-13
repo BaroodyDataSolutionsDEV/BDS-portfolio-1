@@ -16,4 +16,4 @@ select
     cast(case when receiving_drop_pct = 'NA' then null else receiving_drop_pct end as numeric) as receiving_drop_pct,
     cast(case when receiving_int = 'NA' then null else receiving_int end as integer) as receiving_int,
     cast(case when receiving_rat = 'NA' then null else receiving_rat end as numeric) as receiving_rat
-from {{ source('raw', 'advstats_rec') }}
+from {{ source('warehouse', 'advstats_rec') }}

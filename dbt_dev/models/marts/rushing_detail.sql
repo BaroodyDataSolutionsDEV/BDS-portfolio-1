@@ -1,15 +1,15 @@
 with
 
 players as (
-    select * from dev.dim_players
+    select * from {{ ref('dim_players') }}
 ),
 
 games as (
-    select * from dev.dim_games
+    select * from {{ ref('dim_games') }}
 ),
 
 plays as (
-    select * from dev.fct_play
+    select * from {{ ref('fct_play') }}
 ),
 
 final as (

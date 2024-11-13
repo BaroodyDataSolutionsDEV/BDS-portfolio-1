@@ -417,4 +417,4 @@ select
     xyac_fd::numeric,
     xpass::numeric,
     pass_oe::numeric
-from {{ source('raw', 'pbp') }}
+from {{ source('warehouse', 'pbp') }}

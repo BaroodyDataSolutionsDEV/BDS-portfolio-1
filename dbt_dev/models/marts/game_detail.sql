@@ -30,7 +30,7 @@ with team_games as (
 		stadium_id,
 		game_stadium,
 		home_opening_kickoff
-	from dev.dim_games
+	from {{ ref('dim_games') }}
 	union all
 	select
 		game_id,
@@ -63,7 +63,7 @@ with team_games as (
 		stadium_id,
 		game_stadium,
 		home_opening_kickoff
-	from dev.dim_games
+	from {{ ref('dim_games') }}
 ),
 game_details as (
     select 
@@ -91,7 +91,7 @@ game_details as (
         games.home_score - games.away_score as net_score_relative_to_home_team,
         games.home_score + games.away_score as total_score,
         games.home_opening_kickoff
-    from dev.dim_games games
+    from {{ ref('dim_games') }} games
 ),
 plays_summary as (
     select 
@@ -117,7 +117,7 @@ plays_summary as (
         sum(return_touchdown) as returned_touchdowns,
         sum(first_down) as first_downs
     from team_games
-        left join dev.fct_play plays on team_games.game_id = plays.game_id 
+        left join {{ ref('fct_play') }} plays on team_games.game_id = plays.game_id 
             and team_games.team = plays.possession_team
     group by team_games.game_id, team_games.team, team_games.opponent
 ),

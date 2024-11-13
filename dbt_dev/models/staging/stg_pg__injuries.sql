@@ -15,4 +15,4 @@ select
     practice_secondary_injury,
     practice_status,
     date_modified::timestamptz
-from {{ source('raw', 'injuries') }}
+from {{ source('warehouse', 'injuries') }}
