@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: warehouse
-    database: postgres  
+    database: warehouse  
     schema: raw
     tables:
       - name: pbp

@@ -541,44 +541,44 @@ create table raw.advstats_rush (
 );
 
 -- load pbp data
-\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/pbp/play_by_play_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/pbp/play_by_play_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/pbp/play_by_play_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/pbp/play_by_play_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/pbp/play_by_play_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/archive/pbp/play_by_play_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/archive/pbp/play_by_play_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/archive/pbp/play_by_play_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/archive/pbp/play_by_play_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.pbp FROM '/home/mike_user/portfolio-projects/nfl/data/archive/pbp/play_by_play_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
 
 -- load rosters data
-\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/rosters/roster_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/rosters/roster_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/rosters/roster_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/rosters/roster_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/rosters/roster_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/archive/rosters/roster_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/archive/rosters/roster_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/archive/rosters/roster_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/archive/rosters/roster_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.rosters FROM '/home/mike_user/portfolio-projects/nfl/data/archive/rosters/roster_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
 
 -- load injuries data
-\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/injuries/injuries_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/injuries/injuries_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/injuries/injuries_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/injuries/injuries_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/injuries/injuries_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/archive/injuries/injuries_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/archive/injuries/injuries_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/archive/injuries/injuries_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/archive/injuries/injuries_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.injuries FROM '/home/mike_user/portfolio-projects/nfl/data/archive/injuries/injuries_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
 
 -- load advstats data
-\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_def_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_def_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_def_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_def_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_def_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rec_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rec_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rec_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rec_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rec_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_pass_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_pass_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_pass_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_pass_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_pass_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rush_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rush_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rush_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rush_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
-\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/advstats/advstats_week_rush_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_def_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_def_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_def_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_def_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_def FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_def_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rec_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rec_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rec_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rec_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rec FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rec_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_pass_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_pass_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_pass_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_pass_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_pass FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_pass_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rush_2020.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rush_2021.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rush_2022.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rush_2023.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
+\copy raw.advstats_rush FROM '/home/mike_user/portfolio-projects/nfl/data/archive/advstats/advstats_week_rush_2024.csv' WITH (FORMAT CSV, HEADER true, DELIMITER ',');
